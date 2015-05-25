@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="eventsApp">
+<head>
+  <meta charset = "UTF-8">
+  <title>FundamentalsDemoApp: Event Registration</title>
+  <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+  <link rel = "stylesheet" href = "css/app.css"/>
+  <link href = "http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Open+Sans:400,300|Raleway|Cinzel"
+        rel = "stylesheet" type = "text/css">
+  <style>
+    h1, h2, p {
+      font-family: "Open Sans";
+    }
+    .container {
+      border: solid 1px #444;
+    }
+    hr {
+      border: solid 3px #1f6377;
+    }
+  </style>
+</head>
+
+  <body>
+    <div class="container">
+      <h1>FUNDAMENTALS DEMO APP: INDEX PAGE</h1>
+      <div ng-view></div>
+
+    </div>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/underscore-1.4.4.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/EventController.js"></script>
+
+  </body>
+
+</html>
