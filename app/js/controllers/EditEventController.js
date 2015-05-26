@@ -13,4 +13,5 @@ eventsApp.controller('EditEventController', ['$scope', function EditEventControl
             window.location = "#/NewEvent";
         };
     }]);
+//Testing for git remote 
 //# sourceMappingURL=EditEventController.js.map
