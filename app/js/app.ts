@@ -3,7 +3,6 @@
  */
 'use strict';
 
-/*
 var eventsApp = angular.module('eventsApp', ['ngRoute']);
 
 // ROUTES
@@ -13,7 +12,12 @@ eventsApp.config(function ($routeProvider) {
          templateUrl: "EventDetails.html",
          controller: "EventController"
       })
+      .when('/NewEvent', {
+         templateUrl: "NewEvent.html",
+         controller: "EditEventController"
+      })
+
       .otherwise({
          redirectTo: '/'
       });
-});*/
+});
