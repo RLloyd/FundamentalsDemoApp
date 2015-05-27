@@ -3,6 +3,7 @@
  */
 'use strict';
 eventsApp.controller('EditEventController', ['$scope', function EditEventController($scope) {
+        $scope.event = {};
         $scope.saveEvent = function (event, newEventFormParam) {
             console.log("newEventForm: ", newEventFormParam);
             if (newEventFormParam.$valid) {
@@ -13,5 +14,4 @@ eventsApp.controller('EditEventController', ['$scope', function EditEventControl
             window.location = "#/NewEvent";
         };
     }]);
-//Testing for git remote 
 //# sourceMappingURL=EditEventController.js.map

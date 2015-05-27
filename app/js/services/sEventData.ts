@@ -1,14 +1,21 @@
 /**
  * Created by Odee on 5/26/15.
  */
-// Event data service registered using factory.
-// Use this from a controller
-//And register it in the index.html using <script... tag
+
+/*
+ *sEventData: Data included.
+ * Inject this back to EventController where it was originally from.
+ * register it in the index.html using <script... tag
+ * */
+/* sEventDataHttp: Data loaded externally through AJAX
+*
+* */
 
 
 'use strict';
 
-eventsApp.factory('sEventData', function(){
+
+eventsApp.factory('sEventData', function () {
    return {
       event: {
          name: 'Angular Boot Camp',
@@ -47,5 +54,6 @@ eventsApp.factory('sEventData', function(){
             }
          ]
       };
-   }
-});
+}
+})
+;

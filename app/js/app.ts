@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var eventsApp = angular.module('eventsApp', ['ngRoute']);
+var eventsApp = angular.module('eventsApp', ['ngRoute', 'ngResource']);
 
 // ROUTES
 eventsApp.config(function ($routeProvider) {

@@ -3,7 +3,9 @@
  */
 'use strict';
 
-eventsApp.controller('EditEventController', ['$scope', function EditEventController($scope) {
+eventsApp.controller('EditEventController', ['$scope', function EditEventController ( $scope ) {
+
+   $scope.event = {};
 
    $scope.saveEvent = function(event, newEventFormParam){
       console.log("newEventForm: ",newEventFormParam)
@@ -11,10 +13,9 @@ eventsApp.controller('EditEventController', ['$scope', function EditEventControl
          window.alert("event " + event.name + " saved!");
       }
    };
+
    $scope.cancelEdit = function(){
       window.location = "#/NewEvent"
    }
 
 }]);
-
-//Testing for git remote
