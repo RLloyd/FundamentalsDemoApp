@@ -16,6 +16,10 @@ eventsApp.config(function ($routeProvider) {
          templateUrl: "NewEvent.html",
          controller: "EditEventController"
       })
+      .when('/EditProfile', {
+         templateUrl: "EditProfile.html",
+         controller: "EditProfileController"
+      })
 
       .otherwise({
          redirectTo: '/'

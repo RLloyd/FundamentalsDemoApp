@@ -31,6 +31,10 @@
       font-size: 18px;
       color: wheat;
     }
+    div.navbar ul li {
+      display: inline;
+      margin-right: 20px;
+    }
     aX {
       padding: 10px 0 0 2px;
       font-family: Lato;
@@ -80,8 +84,9 @@
       <h2>FUNDAMENTALS DEMO APP: EVENT DETAILS</h2>
       <div class="navbar">
         <div class="navbar-inner">
-          <ul>
+          <ul class="inline">
             <li><a href = "#/NewEvent">Create Event</a></li>
+            <li><a href = "#/EditProfile">Create Profile</a></li>
           </ul>
         </div>
       </div>
@@ -102,6 +107,9 @@
     <script src="js/app.js"></script>
     <script src="js/controllers/EventController.js"></script>
     <script src="js/controllers/EditEventController.js"></script>
+    <script src="js/controllers/EditProfileController.js"></script>
+    <script src="js/services/sEventData.js"></script>
+    <script src="js/services/sGravatarUrlBuilder.js"></script>
     <script src="js/filters.js"></script>
 
   </body>
